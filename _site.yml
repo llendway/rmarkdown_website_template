@@ -1,0 +1,14 @@
+navbar: 
+  title: Title
+  left:
+  - text: Tabs
+    menu: 
+    - text: file1 name
+      href: file1.html
+    - text: file2 name
+      href: file2.html
+    - text: file3 name
+      href: file3.html
+output:
+  html_document:
+    theme: flatly
