@@ -11,7 +11,7 @@
 
 
 
-<title>File 2</title>
+<title>Main page</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -30,8 +30,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
-<script src="site_libs/navigation-1.1/sourceembed.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
@@ -59,11 +57,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-#rmd-source-code {
-  display: none;
-}
-</style>
 
 
 
@@ -224,9 +217,6 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
 
 
 
@@ -253,23 +243,8 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tabs
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="file1.html">file1 name</a>
-    </li>
-    <li>
-      <a href="file2.html">file2 name</a>
-    </li>
-    <li>
-      <a href="file3.html">file3 name</a>
-    </li>
-  </ul>
+        <li>
+  <a href="main.html">Main page that links to files</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -281,23 +256,22 @@ $(document).ready(function () {
 
 <div id="header">
 
-<div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
-<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+
+
+<h1 class="title toc-ignore">Main page</h1>
+
+</div>
+
+
+<p>This is where you link to the other files, which are in a folder in the main directory. Make sure the name of the folder does not have an underscore in it. You also need to go knit those files within the folder first. And, if you update the file, <strong>you need to reknit it!</strong>.</p>
+<ul>
+<li><a href="main/file1.html">File 1</a><br />
+</li>
+<li><a href="main/file2.html">File 2</a><br />
+</li>
+<li><a href="main/file3.html">File 3</a></li>
 </ul>
-</div>
 
-
-
-<h1 class="title toc-ignore">File 2</h1>
-
-</div>
-
-
-<p>This is my second file.</p>
-
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRmlsZSAyIgpvdXRwdXQ6ICAgCiAgaHRtbF9kb2N1bWVudDogCiAgICBkZl9wcmludDogcGFnZWQKICAgIGNvZGVfZG93bmxvYWQ6IHRydWUKLS0tCgpUaGlzIGlzIG15IHNlY29uZCBmaWxlLg==</div>
 
 
 
@@ -331,11 +305,6 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<script>
-$(document).ready(function () {
-  window.initializeSourceEmbed("file2.Rmd");
-});
-</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
