@@ -2,7 +2,7 @@ navbar:
   title: Title
   left:
   - text: Main page that links to files
-    href: main.html
+    href: content.html
 output:
   html_document:
     theme: flatly
